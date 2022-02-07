@@ -168,13 +168,13 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Client Management</h3>
+                  <h3>Product sales Management</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       <i data-feather="home"></i></a></li>
+                    <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
                     <li class="breadcrumb-item">Clients</li>
-                    <li class="breadcrumb-item active">Client Management</li>
+                    <li class="breadcrumb-item active">Product sales Managements</li>
                   </ol>
                 </div>
               </div>
@@ -213,21 +213,12 @@
                             <i class="fa fa-check-circle text-success" style="font-size: 36px;"></i>
                           <div class="media-body">
                             <div class="right-chart-content">
-                              <h4>300</h4><span>Successful Receipts</span>
+                              <h4>300</h4><span>Total Revenue</span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
-                        <div class="media border-none align-items-center">
-                            <i class="fa fa-times-circle text-danger" style="font-size: 36px;"></i>
-                          <div class="media-body">
-                            <div class="right-chart-content">
-                              <h4>56</h4><span>Failed Receipts </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -253,7 +244,7 @@
                                 <div class="row">
                             <div class="col-3">
                                 <label class="col-form-label pt-0" for="fname">Date</label>
-                              <input class="form-control " type="datetime" placeholder="">
+                              <input class="form-control " type="datetime" name="date" placeholder="2022/02/22">
                             </div>
                             <div class="col-3">
                                 <label class="col-form-label pt-0" for="lname">Serial #</label>
@@ -343,7 +334,8 @@
                                        <td> CASH</td>
                             <td c;><span class=" badge badge-primary">Posted</span></td>
                       
-                            <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" data-bs-toggle="modal" data-bs-target="#editclient"><i class="fa fa-shopping-cart"></i> View Sale</a><a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-danger btn-sm "data-bs-toggle="modal" data-bs-target="#deactivateclient" "><i class="fa fa-print"></i> Print</a></td>
+                            <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" data-bs-toggle="modal" data-bs-target="#viewSales"><i class="fa fa-shopping-cart"></i> View Sale</a>
+                                <a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-danger btn-sm "data-bs-toggle="modal" data-bs-target="#deactivateclient" "><i class="fa fa-print"></i> Print</a></td>
                           </tr>
                    <tr>
                             <td><a class="text-inherit" href="#">49087E2 </a></td>
@@ -375,98 +367,196 @@
                   <div class="modal fade" id="viewSales" tabindex="-1" role="dialog" aria-labelledby="viewSales" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title">Products Sold</h5>
-                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="invoice">
-                      <div>
-                        <div>
-                         
-                        </div>
-                        <hr>
-                        <!-- End InvoiceTop-->
-                     
-                        <!-- End Invoice Mid-->
-                        <div>
-                          <div class="table-responsive invoice-table" id="table">
-                            <table class="table table-bordered table-striped">
-                              <tbody>
-                                <tr>
-                                  <td class="item">
-                                    <h6 class="p-2 mb-0">Product</h6>
-                                  </td>
-                                  <td class="Hours">
-                                    <h6 class="p-2 mb-0">Quantity</h6>
-                                  </td>
-                                  <td class="Rate">
-                                    <h6 class="p-2 mb-0">Unit Price (TZS)</h6>
-                                  </td>
-                                   <td class="Rate">
-                                    <h6 class="p-2 mb-0">Discount(TZS)</h6>
-                                  </td>
-                                  <td class="subtotal">
-                                    <h6 class="p-2 mb-0">Amount(TZS)</h6>
-                                  </td>
-                                </tr>
-                     
-              
-                     
-                                <tr>
-                                  <td>
-                                    <p class="itemtext">HP Laptop</p>
-                                  </td>
-                                  <td>
-                                    <p class="m-0">1</p>
-                                  </td>
-                                  <td>
-                                    <p class="m-0">1,500,000</p>
-                                  </td>
-                                  <td>
-                                    <p class="m-0">0</p>
-                                  </td>
-                                  <td>
-                                    <p class="m-0">1,500,000</p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  <td></td>
-                                  <td class="Rate">
-                                    <h6 class="mb-0 p-2">Total</h6>
-                                  </td>
-                                  <td class="payment">
-                                    <h6 class="mb-0 p-2">0</h6>
-                                  </td>
-                                   <td class="payment">
-                                    <h6 class="mb-0 p-2">1,500,000</h6>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <!-- End Table-->
-                 
-                        </div>
-                        <!-- End InvoiceBot-->
-                      </div>
-                    
-                      <!-- End Invoice-->
-                      <!-- End Invoice Holder-->
-                      <!-- Container-fluid Ends-->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-                          </div>
+                          
+                          <section class="invoice-preview-wrapper">
+                            <div class="row invoice-preview">
+                              <!-- Invoice -->
+                              <div class="col-xl-12 col-md-12 col-12">
+                                <div class="card invoice-preview-card">
+                                  <div class="card-body invoice-padding pb-0">
+                                    <!-- Header starts -->
+                                    <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                      <div>
+                                        <div class="logo-wrapper">
+                                           <!-- <span calss= "brand logo">
+                                               <img src="../../app-assets/images/logo/favicon.png">
+                                           </span> -->
+                                          <h3 class=" invoice-logo" style="color:rgb(131, 85, 24);">TRA</h3>
+                                        </div>
+                                        <p class="card-text mb-25"> Postcode:28 Edward Sokoine Drive,</p> 
+                                            
+                                        <p class="card-text mb-25">11105 Mchafukoge, Ilala CBD,</p>
+                                        <p class="card-text mb-0">P.0. Box 79882
+                                            Dar es Salaam - Tanzania</p>
+
+                                             
+                                      </div>
+                                      <div class="mt-md-0 mt-2">
+                                        <!-- <h4 class="invoice-title">
+                                          Invoice
+                                          <span class="invoice-number">#3492</span>
+                                        </h4> -->
+                                        <div class="invoice-date-wrapper">
+                                          <p class="invoice-date-title">Date Issued:</p>
+                                          <p class="invoice-date">2021/08/24</p>
+                                        </div>
+                                        <div class="invoice-date-wrapper">
+                                          <p class="invoice-date-title">Due Date:</p>
+                                          <p class="invoice-date">2021/08/25</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- Header ends -->
+                                  </div>
+                          
+                                  <hr class="invoice-spacing" />
+                          
+                                  <!-- Address and Contact starts -->
+                                  <div class="card-body invoice-padding pt-0">
+                                    <div class="row invoice-spacing">
+                                      <div class="col-xl-8 p-0">
+                                        <h6 class="mb-2">Invoice To:</h6>
+                                        <h6 class="mb-25">TRA</h6>
+                                        <p class="card-text mb-25">Postcode:28 Edward Sokoine Drive,</p>
+                                        <p class="card-text mb-25">11105 Mchafukoge, Ilala CBD </p>
+                                        <p class="card-text mb-0"> P.0. Box 79882,
+                                          Dar es Salaam - Tanzania</p>
+                                      </div>
+                                      <div class="col-xl-4 p-0 mt-xl-0 mt-2">
+                                        <h6 class="mb-2">Payment Details:</h6>
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td class="pr-1">Total Payment:</td>
+                                              <td><span class="font-weight-bold">10,000M</span></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="pr-1">Bank name:</td>
+                                              <td>CRDB Bank</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="pr-1">Country:</td>
+                                              <td>TAnzania</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="pr-1">IBAN:</td>
+                                              <td>ETD95476213874685</td>
+                                            </tr>
+                                            
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Address and Contact ends -->
+                          
+                                  <!-- Invoice Description starts -->
+                                  <div class="table-responsive">
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th class="py-1">Item description</th>
+                                          
+                                          <th class="py-1">Quantity</th>
+                                          <th class="py-1">Amount</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                            <td class="py-1">
+                                              <p class="card-text font-weight-bold mb-25">vfd machine</p>
+                                              <p class="card-text text-nowrap">
+                                                Aquire Vfd mashine and usage
+                                              </p>
+                                            </td>
+                                            <td class="py-1">
+                                              <span class="font-weight-bold">300</span>
+                                            </td>
+                                            
+                                            <td class="py-1">
+                                              <span class="font-weight-bold">300,000.00</span>
+                                            </td>
+                                          </tr>
+                                          <tr class="border-bottom">
+                                            <td class="py-1">
+                                              <p class="card-text font-weight-bold mb-25">vfd mashine card</p>
+                                              <p class="card-text text-nowrap">istall Vfd system</p>
+                                            </td>
+                                            <td class="py-1">
+                                              <span class="font-weight-bold">200</span>
+                                            </td>
+                                            <td class="py-1">
+                                              <span class="font-weight-bold">200,000.00</span>
+                                            </td>
+                                            
+                                          </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                          
+                                  <div class="card-body invoice-padding pb-0">
+                                    <div class="row invoice-sales-total-wrapper">
+                                      <div class="col-md-6 order-md-1 order-2 mt-md-0 mt-3">
+                                        <p class="card-text mb-0">
+                                          <span class="font-weight-bold">Salesperson:</span> <span class="ml-75">Augostino Mrema</span>
+                                        </p>
+                                      </div>
+                                      <div class="col-md-6 d-flex justify-content-end order-md-2 order-1">
+                                        <div class="invoice-total-wrapper">
+                                          <div class="invoice-total-item">
+                                            <p class="invoice-total-title">Subtotal:</p>
+                                            <p class="invoice-total-amount">180,000</p>
+                                          </div>
+                                          
+                                          <hr class="my-50" />
+                                          <div class="invoice-total-item">
+                                            <p class="invoice-total-title">Total:</p>
+                                            <p class="invoice-total-amount">500,000.00</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Invoice Description ends -->
+                          
+                                  <hr class="invoice-spacing" />
+                          
+                                  <!-- Invoice Note starts -->
+                                  <div class="card-body invoice-padding pt-0">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <span class="font-weight-bold">Note:</span>
+                                        <span
+                                          >It was a pleasure working with you and your team. We hope you will keep us in mind for future freelance
+                                          projects. Thank You!</span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Invoice Note ends -->
+                                </div>
+                              </div>
+                              <!-- /Invoice -->
+                          
+                              <!-- Invoice Actions -->
+                              <div class="col-xl-12 col-md-12 col-12 invoice-actions mt-md-0 mt-2">
+                                <div class="card">
+                                  <div class="card-body">
+                                    
+                                   
+                                    <a class="btn btn-outline-secondary btn-block mb-75" href="print.receipt.html" target="_blank">
+                                      Print
+                                    </a>
+                                    <!-- <a class="btn btn-outline-secondary btn-block mb-75" href="edit.receipt.html"> Edit </a> -->
+                                    <!-- <button class="btn btn-success btn-block" data-toggle="modal" data-target="#add-payment-sidebar">
+                                      Add Payment
+                                    </button> -->
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /Invoice Actions -->
+                            </div>
+                          </section>
                           <div class="modal-footer">
                             <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">Cancel</button>
                             <button class="btn btn-primary btn-air-primary" type="button">Edit</button>

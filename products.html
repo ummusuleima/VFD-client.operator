@@ -167,7 +167,7 @@
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       <i data-feather="home"></i></a></li>
+                    <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
                     <li class="breadcrumb-item">Products</li>
                     <li class="breadcrumb-item active">Product Management</li>
                   </ol>
@@ -196,22 +196,28 @@
                           <div class="modal-body">
                             <form class="form-space theme-form ">
                               <div class="row">
-                                  <div class="col-6">
-                              <label class="col-form-label pt-0" for="phone">Product Image</label>
-                             <input class="form-control" type="file">
-                          </div>
+                                  
                           <div class="col-6">
                               <label class="col-form-label pt-0" for="fname">Product Name</label>
                             <input class="form-control" type="text" placeholder="eg Printer">
                           </div>
+                          <div class="col-6">
+                            <label class="col-form-label pt-0" for="phone">Brand Name</label>
+                          <input class="form-control" type="text" placeholder="eg HP">
+                        </div>
                        
                        
                         </div>
                               <div class="row">
-                                   <div class="col-6">
-                              <label class="col-form-label pt-0" for="phone">Brand Name</label>
-                            <input class="form-control" type="text" placeholder="eg HP">
-                          </div>
+                                   
+                          <div class="col-6">
+                            <label class="col-form-label pt-0" for="email">Tax Group </label>
+                            <select class="js-example-basic-single col-sm-12" id="statusType">
+                              <option value="">Choose Tax Group</option>
+                              <option value="VRN">Taxable</option>
+                              <option value="Non VRN">Non Taxable</option>
+                          </select>
+                        </div>
                  
                                    <div class="col-6">
                               <label class="col-form-label pt-0" for="email">Price </label>
@@ -235,9 +241,10 @@
                       <table class="table card-table table-vcenter text-nowrap">
                         <thead>
                           <tr>
-                               <th>Product Image</th>
+                             
                             <th>Product Name</th>
                              <th>Brand Name</th>
+                             <th>Tax Group</th>
                             <th>Price</th>
                         
                         
@@ -248,9 +255,10 @@
                         </thead>
                         <tbody>
                           <tr>
-                              <td><img class="img-fluid for-light" src="assets/images/product/laptop.jpg" alt="" width="100px"></td>
+                              
                             <td><a class="text-inherit" href="#">Laptop </a></td>
                             <td>Lenovo</td>
+                            <td>Non Taxable</td>
                               <td>1,000,000</td>
                           
                         
@@ -281,23 +289,27 @@
                           <div class="modal-body">
                             <form class="form-space theme-form ">
                             <div class="row">
-                                  <div class="col-6">
-                              <label class="col-form-label pt-0" for="phone">Product Image</label>
-                             <input class="form-control" type="file">
-                          </div>
+                                  
                           <div class="col-6">
                               <label class="col-form-label pt-0" for="fname">Product Name</label>
                             <input class="form-control" type="text" placeholder="eg Printer">
                           </div>
-                       
+                          <div class="col-6">
+                            <label class="col-form-label pt-0" for="phone">Brand Name</label>
+                          <input class="form-control" type="text" placeholder="eg HP">
+                        </div>
                        
                         </div>
                              <div class="row">
-                                 <div class="col-6">
-                              <label class="col-form-label pt-0" for="phone">Brand Name</label>
-                            <input class="form-control" type="text" placeholder="eg HP">
-                          </div>
-                 
+                                 
+                              <div class="col-6">
+                                <label class="col-form-label pt-0" for="email">Tax Group </label>
+                                <select class="js-example-basic-single col-sm-12" id="statusType">
+                                  <option value="">Choose Tax Group</option>
+                                  <option value="VRN">Taxable</option>
+                                  <option value="Non VRN">Non Taxable</option>
+                              </select>
+                            </div>
                                    <div class="col-6">
                               <label class="col-form-label pt-0" for="email">Price </label>
                             <input class="form-control" type="text" name="number" placeholder="eg 1000">
