@@ -186,7 +186,7 @@
                 <div class="card">
                   <div class="card-body p-0">
                     <div class="row m-0 chart-main">
-                      <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
+                      <div class="col-xl-4 col-md-6 col-sm-6 p-0 box-col-6">
                         <div class="media align-items-center">
                          
                            <i class="fa fa-file-text text-secondary" style="font-size: 36px;"></i>
@@ -198,7 +198,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
+                      <div class="col-xl-4 col-md-6 col-sm-6 p-0 box-col-6">
                         <div class="media align-items-center">
                              <i class="fa fa-clock-o text-warning" style="font-size: 36px;"></i>
                           <div class="media-body">
@@ -208,7 +208,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-3 col-md-6 col-sm-6 p-0 box-col-6">
+                      <div class="col-xl-4 col-md-6 col-sm-6 p-0 box-col-6">
                         <div class="media align-items-center">
                             <i class="fa fa-check-circle text-success" style="font-size: 36px;"></i>
                           <div class="media-body">
@@ -240,64 +240,171 @@
                               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              <form class="form-space theme-form ">
-                                <div class="row">
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="fname">Date</label>
-                              <input class="form-control " type="datetime" name="date" placeholder="2022/02/22">
-                            </div>
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="lname">Serial #</label>
-                              <input class="form-control" type="text" name="text" placeholder="eg 123456789">
-                            </div>
-                            <div class="col-3">
-                              <label class="col-form-label pt-0" for="lname">TIN #</label>
-                            <input class="form-control" type="text" name="text" placeholder="eg 123456789">
-                          </div>
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="email">Registration #</label>
-                              <input class="form-control" type="number" name="text" placeholder="">
-                            </div>
-                            <div class="col-3">
-                              <label class="col-form-label pt-0" for="email">invoice #</label>
-                            <input class="form-control" type="number" name="text" placeholder="">
-                          </div>
-                          </div>
-                                <div class="row">
-                            
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="branch">customer  Type</label>
-                                <select class="js-example-basic-single col-sm-12">
+                              <div class="">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="invoice">
+                                <div>
+                                  <div>
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div class="media">
+                                      
+                                         <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                      <div class="col-xl-1" style="position: relative;left: 10px;">
+                                        <div class="logo-wrapper">
+                                           <span calss= "brand logo">
+                                               <img src="../client-operator/assets/images/Promo-Facebook-Facebook-profile-picture.png"  width="50px" height="60px">
+                                           </span>
+                                        </div>
+                                        
+                                       
+                                             
+                                      </div>
+                                      <div class="mt-md-0 mt-2 col-xl-11" style="position: relative;left: 200px;">
+                                        <p class="card-text mb-0">BARAKA AND COMPANY LIMITED,</p>    
+                                        <p class="card-text mb-0">BARAKA HOUSE WASABI DRIVE,</p>
+                                        <p class="card-text mb-0">P.O.BOX 12345, DAR-ES-SALAAM</p>
+                                        <p class="card-text mb-0">TEL:255678789</p>
+                                        <p class="card-text mb-0">FAX:2222222222</p>
+                                        <p class="card-text mb-0">TIN:W737288399</p>
+                                        <p class="card-text mb-0">VRN:345677888</p>
+                                        <p class="card-text mb-0">SERIAL NUMBER:22222233</p>
+                                        <p class="card-text mb-0">UIN:123456777</p>
+                                        <p class="card-text mb-0">TAX OFFICE:MIKOCHENI</p>
+
+                                      </div>
+                                     
+                                    </div>
+                                        </div>
+                                        <!-- End Info-->
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <!-- End InvoiceTop-->
+                                  <div class="row">
+                                     <form class="form-space theme-form ">
+                              
+                                        <div class="row">
+                                  
+                                    <div class="col-6">
+                                        <label class="col-form-label pt-0" for="branch">Select Client</label>
+                                        <select class="js-example-basic-single col-sm-12">
+                                   
+                                      <option value="AL"> Justin Jonathani Ezekiel</option>
+                                      <option value="WY">Salim Kambangwa</option>
+                               
+                                 
+                                     
+                                  </select>
+                                    </div>
+                                      <div class="col-6">
+                                        <label class="col-form-label pt-0" for="branch">Select Payment Mode</label>
+                                        <select class="js-example-basic-single col-sm-12">
+                                   
+                                      <option value="AL">Cash</option>
+                                      <option value="WY">Bank</option>
+                               
+                                 
+                                      <option value="WY">M-PESA</option>
+                                      <option value="WY">TIGO PESA</option>
+                                      <option value="WY">AIRTEL MONEY</option>
+                               
+                                  </select>
+                                    </div>
+                                  
+                                  </div>
                            
-                              <option value="Driving License">Driving License</option>
-                              <option value="Voters Number">Voters Number</option>
-                              <option value="Passport">Passport</option>
-                              <option value="NID (National Identity)">NID (National Identity)</option>
-                              <option value="NIL (If there is no ID">NIL (If there is no ID</option>
-                       
-                          </select>
+                         
+                                  </form>
+                                  </div>
+                                  <!-- End Invoice Mid-->
+                                  <div>
+                                     <div class="table-responsive invoice-table" id="table">
+                                      <table class="table table-bordered table-striped">
+                                        <tbody>
+                                          <tr>
+                                             <td class="item">
+                                              <a class="p-2 mb-0 text-primary" href="#" data-bs-original-title="" title=""><u>Add</u></a>
+                                            </td>
+                                            <td class="item">
+                                              <p class="p-2 mb-0"><strong>Item Discription</strong></p>
+                                            </td>
+                                            <td class="Hours">
+                                              <p class="p-2 mb-0"><strong>Quantity</strong></p>
+                                            </td>
+                                            <td class="Rate">
+                                              <p class="p-2 mb-0"><strong>Price </strong></p>
+                                            </td>
+                                             <td class="Rate">
+                                              <p class="p-2 mb-0"><strong>Discount</strong></p>
+                                            </td>
+                                            <td class="subtotal">
+                                              <p class="p-2 mb-0"><strong>Amount(TZS)</strong></p>
+                                            </td>
+                                          </tr>
+                               
+                        
+                               
+                                          <tr>
+                                               <td class="item">
+                                              <a class="p-2 mb-0 text-danger" href="#" data-bs-original-title="" title=""><u>Remove</u></a>
+                                            </td>
+                                            <td>
+                                              <p class="itemtext">Vfd Machine</p>
+                                            </td>
+                                            <td>
+                                              <p class="m-0">1</p>
+                                            </td>
+                                            <td>
+                                              <p class="m-0">1,500,000</p>
+                                            </td>
+                                            <td>
+                                              <p class="m-0">0</p>
+                                            </td>
+                                            <td>
+                                              <p class="m-0">1,500,000</p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                             <td></td>
+                                            <td class="Rate">
+                                              <h6 class="mb-0 p-2">Total</h6>
+                                            </td>
+                                            <td class="payment">
+                                              <h6 class="mb-0 p-2">0</h6>
+                                            </td>
+                                             <td class="payment">
+                                              <h6 class="mb-0 p-2">1,500,000</h6>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                      <strong>TOTAL VAT (18%) : </strong>100,000&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;<strong>TOTAL AMOUNT (WITH VAT) : </strong>1,600,000
+                                    </div>
+                                    
+                               
+                                  </div>
+                                
+                                </div>
+                            
+                               
+                              </div>
                             </div>
-                            <div class="col-3">
-                              <label class="col-form-label pt-0" for="phone">customerID</label>
-                            <input class="form-control" type="text" placeholder="123456">
                           </div>
-                            <div class="col-3">
-                                <label class="col-form-label pt-0" for="role">Customer Name</label>
-                              <input class="form-control" type="text" name="text" placeholder="">
-                            </div>
-                            <div class="col-3">
-                              <label class="col-form-label pt-0" for="role">Customer Mobile #</label>
-                            <input class="form-control" type="text" name="text" placeholder="">
-                          </div>
-                          <div class="col-3">
-                            <label class="col-form-label pt-0" for="role">Daily counter</label>
-                          <input class="form-control" type="text" name="text" placeholder="">
                         </div>
-                          </div>
-                   
-                 
-                          </form>
-                            </div>
+                      </div>
+                    </div>
+                                    </div>
                             <div class="modal-footer">
                               <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">Cancel</button>
                               <button class="btn btn-primary btn-air-primary" type="button">Save</button>
@@ -315,9 +422,14 @@
                              <th>Client Name</th>
                              <th>TIN #</th>
                             <th>Date</th>
-                             <th>Total Amount</th>
+                            <th>Item Discription</th>
+                            <th>Payment Method</th>
+                            <th>Quantity</th>
+                            <th>Discount</th>
                             <th>VAT</th>
-                              <th>Payment Method</th>
+                             <th>Total Amount</th>
+                            
+                            
                             <th>Status</th>
                         
                             <th>Action</th>
@@ -328,29 +440,41 @@
                             <td><a class="text-inherit" href="#">49087E2 </a></td>
                             <td>Justin Jonathani Ezekiel</td>
                               <td> 147-431-147</td>
-                                <td>2021-12-14 17:08:18</td>
-                                  <td>137,000.00</td>
+                              <td>2021-12-14 17:08:18</td>
+                                <td>Vfd Machine</td>
+                                <td> CASH</td>
+                                <td>2</td>
+                                <td>12%</td>
                                      <td> 0.00</td>
-                                       <td> CASH</td>
+                                     <td>137,000.00</td>
+                                      
                             <td c;><span class=" badge badge-primary">Posted</span></td>
                       
                             <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" data-bs-toggle="modal" data-bs-target="#viewSales"><i class="fa fa-shopping-cart"></i> View Sale</a>
-                                <a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-danger btn-sm "data-bs-toggle="modal" data-bs-target="#deactivateclient" "><i class="fa fa-print"></i> Print</a></td>
+                              <a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-primary btn-sm"  href="print.html" ><i class="fa fa-print"></i> Print</a></td>
                           </tr>
-                   <tr>
+
+                          <tr>
                             <td><a class="text-inherit" href="#">49087E2 </a></td>
                             <td>Justin Jonathani Ezekiel</td>
                               <td> 147-431-147</td>
-                                <td>2021-12-14 17:08:18</td>
+                              <td>2021-12-14 17:08:18</td>
+                              <td>Vfd Machine</td>
+                              <td> CASH</td>
+                              <td> 2</td>
+                              <td> 12%</td>
+                              <td> 0.00</td> 
                                   <td>137,000.00</td>
-                                     <td> 0.00</td>
-                                       <td> CASH</td>
+                                    
+                                       
                             <td c;><span class=" badge badge-warning">Pending</span></td>
                       
                             <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" data-bs-toggle="modal" data-bs-target="#viewSales"><i class="fa fa-shopping-cart"></i> View Sale</a>
                               <a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a>
-                              
-                              <a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-primary btn-sm "data-bs-toggle="modal" data-bs-target="#deactivateclient" "><i class="fa fa-print"></i> Print</a></td>
+                              <!-- <a class="btn btn-outline-secondary btn-block mb-75" href="print.html" target="_blank">
+                                Print
+                              </a> -->
+                              <a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-primary btn-sm"  href="print.html" ><i class="fa fa-print"></i> Print</a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -376,82 +500,181 @@
                                   <div class="card-body invoice-padding pb-0">
                                     <!-- Header starts -->
                                     <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
-                                      <div>
-                                        <div class="logo-wrapper">
-                                           <!-- <span calss= "brand logo">
-                                               <img src="../../app-assets/images/logo/favicon.png">
-                                           </span> -->
-                                          <h3 class=" invoice-logo" style="color:rgb(131, 85, 24);">TRA</h3>
-                                        </div>
-                                        <p class="card-text mb-25"> Postcode:28 Edward Sokoine Drive,</p> 
-                                            
-                                        <p class="card-text mb-25">11105 Mchafukoge, Ilala CBD,</p>
-                                        <p class="card-text mb-0">P.0. Box 79882
-                                            Dar es Salaam - Tanzania</p>
-
-                                             
+                                      <div class="col-12">
+                                        <p class="card-text mb-0" style="text-align: center;"><strong>*** START OF LEGAL RECEIPT ***</strong></p>
+                                    
                                       </div>
-                                      <div class="mt-md-0 mt-2">
-                                        <!-- <h4 class="invoice-title">
-                                          Invoice
-                                          <span class="invoice-number">#3492</span>
-                                        </h4> -->
-                                        <div class="invoice-date-wrapper">
-                                          <p class="invoice-date-title">Date Issued:</p>
-                                          <p class="invoice-date">2021/08/24</p>
+                                    </div>
+                                    &nbsp; &nbsp; &nbsp;
+                                    <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                      
+                                      <div class="col-xl-1">
+
+                                        
+                                        <div class="logo-wrapper">
+                                           <span calss= "brand logo">
+                                               <img src="../client-operator/assets/images/Promo-Facebook-Facebook-profile-picture.png" width="50px" height="60px">
+                                           </span>
                                         </div>
-                                        <div class="invoice-date-wrapper">
-                                          <p class="invoice-date-title">Due Date:</p>
-                                          <p class="invoice-date">2021/08/25</p>
+                                            
+                                      </div>
+
+                                      
+                                      <div class="mt-md-0 mt-0 col-11" style="text-align: center;"  >
+                                        <p class="card-text mb-0">BARAKA AND COMPANY LIMITED,</p>    
+                                        <p class="card-text mb-0">BARAKA HOUSE WASABI DRIVE,</p>
+                                        <p class="card-text mb-0">P.O.BOX 12345, DAR-ES-SALAAM</p>
+                                        <p class="card-text mb-0">TEL:255678789</p>
+                                        <p class="card-text mb-0">FAX:2222222222</p>
+                                        <p class="card-text mb-0"><strong>TIN</strong>:W737288399</p>
+                                        <p class="card-text mb-0"><strong>VRN</strong>:345677888</p>
+                                        <p class="card-text mb-0"><strong>SERIAL NUMBER</strong>:22222233</p>
+                                        <p class="card-text mb-0"><strong>UIN</strong>:123456777</p>
+                                        <p class="card-text mb-0">TAX OFFICE:MIKOCHENI</p>
+
+                                      </div>
+                                     
+                                    </div>
+                                    <div class="col-12" style="text-align: left;">
+                                      <p class="card-text mb-0">CUSTOMER NAME:SHABAN BARAKA</p>
+                                      <p class="card-text mb-0">CUSTOMER ID TYPE:NIDA</p>
+                                      <p class="card-text mb-0">CUSTOMER ID:23434</p>
+                                      <p class="card-text mb-0">CUSTOMER MOBILE:+255467878</p>
+
+
+                                    </div>
+                                    <hr class="invoice-padding" />
+
+                                    <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                    <div class="col-10">
+                                      <p class="card-text mb-0">RECEIPT NUMBER</p>
+                                      <p class="card-text mb-0">Z NUMBER</p>
+                                      <p class="card-text mb-0">RECEIPT DATE:01-11-2022</p>
+                                    </div>
+                                    <div class="col-2">
+                                      <p class="card-text mb-0">1110010101001011</p>
+                                      <p class="card-text mb-0">123432</p>
+                                      <p class="card-text mb-0">TIME: 13:35:30</p>
+                                    </div>
+                                  </div>
+
+                                  <hr class="invoice-padding" />
+
+                                  <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                    <div class="col-5">
+                                      <p class="card-text mb-0">ITEM DESCRIPTION</p>
+                                      <p class="card-text font-weight-bold mb-0">vfd machine</p>
+                                      <p class="card-text font-weight-bold mb-0">vfd mashine card</p>
+                                    </div>
+                                 
+                                      <div class="col-5">
+                                      <p class="card-text mb-0">QUANTITY</p>
+                                      <p class="card-text mb-0">2*20,000</p>
+                                      <p class="card-text mb-0">3*20000</p>
+                                    </div>
+                               
+
+                                  <div class="col-2">
+                                      <p class="card-text mb-0">AMOUNT</p>
+                                      <p class="card-text mb-0">40,000</p>
+                                      <p class="card-text mb-0">60,000</p>
+                                
+                                  </div>
+                                </div>
+
+                                  <hr class="invoice-padding" />
+
+                                  <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                    <div class="col-10">
+                                      <p class="card-text mb-0"><strong>TOTAL EXCLUSIVE OF TAX</strong></p>
+                                      <p class="card-text mb-0"><strong>DISCOUNT</strong></p>
+                                     
+                                    </div>
+                                    <div class="col-2">
+                                      <p class="card-text mb-0">23456789</p>
+                                      <p class="card-text mb-0">12%</p>
+                                      
+                                    </div>
+                                  </div>
+                                  
+                                  <hr class="invoice-padding" />
+
+
+                                  <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                    <div class="col-10">
+                                      <p class="card-text mb-0">TAX A: 18%</p>
+                                  
+                                    </div>
+                                    <div class="col-2">
+                                      <p class="card-text mb-0">23,644.07</p>
+                                
+                                    </div>
+                                  </div>
+
+                                  <hr class="invoice-padding" />
+
+                                  <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                    <div class="col-10">
+                                      <p class="card-text mb-0"><strong>TOTAL TAX</strong></p>
+                                  
+                                    </div>
+                                    <div class="col 2">
+                                      <p class="card-text mb-0">23,644.07</p>
+                                
+                                    </div>
+                                  </div>
+                                  <hr class="invoice-padding" />
+
+                                  <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                    <div class="col-10">
+                                      <p class="card-text mb-0"><strong>INCLUSIVE OF TAX</strong> </p>
+                                  
+                                    </div>
+                                    <div class="col-2">
+                                      <p class="card-text mb-0">155,000.00</p>
+                                
+                                    </div>
+                                  </div>
+                                  <hr class="invoice-padding" />
+
+                                  <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                    <div class="col-12">
+                                      <p class="card-text mb-0" style="text-align: center;"><strong>RECEIPT VERIFICATION CODE</strong> </p>
+                                  
+                                    </div>
+                                  </div>
+                                    <div class="col-12">
+                                      <p class="card-text mb-0" style="text-align: center;">AAAA1141567</p>
+                                
+                                    </div>
+
+                                    <div class="card-body invoice-padding pt-0">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <span class="font-weight-bold"><strong>Note</strong>:</span>
+                                          <span
+                                            >It was a pleasure working with you and your team. We hope you will keep us in mind for future freelance
+                                            projects. Thank You!</span
+                                          >
                                         </div>
                                       </div>
                                     </div>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <div class="d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0">
+                                      <div class="col-12">
+                                        <p class="card-text mb-0" style="text-align: center;"><b>*** END OF LEGAL RECEIPT ***</b></p>
+                                    
+                                      </div>
+                                    </div>
+
                                     <!-- Header ends -->
                                   </div>
                           
-                                  <hr class="invoice-spacing" />
+                                
                           
-                                  <!-- Address and Contact starts -->
-                                  <div class="card-body invoice-padding pt-0">
-                                    <div class="row invoice-spacing">
-                                      <div class="col-xl-8 p-0">
-                                        <h6 class="mb-2">Invoice To:</h6>
-                                        <h6 class="mb-25">TRA</h6>
-                                        <p class="card-text mb-25">Postcode:28 Edward Sokoine Drive,</p>
-                                        <p class="card-text mb-25">11105 Mchafukoge, Ilala CBD </p>
-                                        <p class="card-text mb-0"> P.0. Box 79882,
-                                          Dar es Salaam - Tanzania</p>
-                                      </div>
-                                      <div class="col-xl-4 p-0 mt-xl-0 mt-2">
-                                        <h6 class="mb-2">Payment Details:</h6>
-                                        <table>
-                                          <tbody>
-                                            <tr>
-                                              <td class="pr-1">Total Payment:</td>
-                                              <td><span class="font-weight-bold">10,000M</span></td>
-                                            </tr>
-                                            <tr>
-                                              <td class="pr-1">Bank name:</td>
-                                              <td>CRDB Bank</td>
-                                            </tr>
-                                            <tr>
-                                              <td class="pr-1">Country:</td>
-                                              <td>TAnzania</td>
-                                            </tr>
-                                            <tr>
-                                              <td class="pr-1">IBAN:</td>
-                                              <td>ETD95476213874685</td>
-                                            </tr>
-                                            
-                                          </tbody>
-                                        </table>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- Address and Contact ends -->
-                          
+                                  
                                   <!-- Invoice Description starts -->
-                                  <div class="table-responsive">
+                                  <!-- <div class="table-responsive">
                                     <table class="table">
                                       <thead>
                                         <tr>
@@ -492,47 +715,15 @@
                                           </tr>
                                       </tbody>
                                     </table>
-                                  </div>
+                                  </div> -->
                           
-                                  <div class="card-body invoice-padding pb-0">
-                                    <div class="row invoice-sales-total-wrapper">
-                                      <div class="col-md-6 order-md-1 order-2 mt-md-0 mt-3">
-                                        <p class="card-text mb-0">
-                                          <span class="font-weight-bold">Salesperson:</span> <span class="ml-75">Augostino Mrema</span>
-                                        </p>
-                                      </div>
-                                      <div class="col-md-6 d-flex justify-content-end order-md-2 order-1">
-                                        <div class="invoice-total-wrapper">
-                                          <div class="invoice-total-item">
-                                            <p class="invoice-total-title">Subtotal:</p>
-                                            <p class="invoice-total-amount">180,000</p>
-                                          </div>
-                                          
-                                          <hr class="my-50" />
-                                          <div class="invoice-total-item">
-                                            <p class="invoice-total-title">Total:</p>
-                                            <p class="invoice-total-amount">500,000.00</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- Invoice Description ends -->
+                                 
+                                
                           
-                                  <hr class="invoice-spacing" />
+                                
                           
                                   <!-- Invoice Note starts -->
-                                  <div class="card-body invoice-padding pt-0">
-                                    <div class="row">
-                                      <div class="col-12">
-                                        <span class="font-weight-bold">Note:</span>
-                                        <span
-                                          >It was a pleasure working with you and your team. We hope you will keep us in mind for future freelance
-                                          projects. Thank You!</span
-                                        >
-                                      </div>
-                                    </div>
-                                  </div>
+                                  
                                   <!-- Invoice Note ends -->
                                 </div>
                               </div>
@@ -542,19 +733,9 @@
                               <div class="col-xl-12 col-md-12 col-12 invoice-actions mt-md-0 mt-2">
                                 <div class="card">
                                   <div class="card-body">
-                                    
-                                   
-                                    <a class="btn btn-outline-secondary btn-block mb-75" href="print.receipt.html" target="_blank">
-                                      Print
-                                    </a>
-                                    <!-- <a class="btn btn-outline-secondary btn-block mb-75" href="edit.receipt.html"> Edit </a> -->
-                                    <!-- <button class="btn btn-success btn-block" data-toggle="modal" data-target="#add-payment-sidebar">
-                                      Add Payment
-                                    </button> -->
                                   </div>
                                 </div>
                               </div>
-                              <!-- /Invoice Actions -->
                             </div>
                           </section>
                           <div class="modal-footer">
@@ -599,6 +780,7 @@
     <script src="assets/js/script.js"></script>
   
     <!-- login js-->
+   
     <!-- Plugin used-->
   </body>
 
